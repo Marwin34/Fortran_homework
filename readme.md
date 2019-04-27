@@ -40,8 +40,8 @@ Przykładowe wykresy stworzone narzędziem gnuplot stosując odpowiednie pliki s
 res
   ├── plots_kind_4          #(plik wykresu kind = 4)
   ├── plots_kind_8          #(plik wykresu kind = 8)
-  ├── plots_kin_16          #(plik wykresu kind = 16)
+  ├── plots_kind_16         #(plik wykresu kind = 16)
 ```
 
 ## Wnioski
-Zadany problem najszybciej liczony jest za pomocą wbudowanej funkcji matmull, jednak róznica pomiędzy metodami jest stosunkowo mała. Zauważyć jednak można, że niwny sposób obliczania iloczynu macierzy jest wolniejszt niż jego ulepszona wersja. Na długość obliczania ma też znaczący wpływ dokładność użytych typów (najszybciej dla kind = 4 a najwolniej dla kind = 16).
+Zadany problem najszybciej liczony jest za pomocą wbudowanej funkcji matmull, jednak róznica pomiędzy metodami jest stosunkowo mała. Zauważyć jednak można, że naiwny sposób obliczania iloczynu macierzy jest wolniejszy niż jego ulepszona wersja. Na długość obliczania ma też znaczący wpływ dokładność użytych typów (najszybciej dla kind = 4 a najwolniej dla kind = 16).
