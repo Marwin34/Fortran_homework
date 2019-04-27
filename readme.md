@@ -31,6 +31,7 @@ _Wykres porównujący czas wykonania mnożenia macierzy dla kind = 8_
 ![alt text](https://github.com/Marwin34/Fortran_homework/blob/master/res/wykres16.png "Wykres dla kind = 16")
 _Wykres porównujący czas wykonania mnożenia macierzy dla kind = 16_
 </center>
+
 ___
 
 Przykładowe wykresy stworzone narzędziem gnuplot stosując odpowiednie pliki sterujące.
