@@ -21,6 +21,7 @@ Uruchomienie programu spowoduje przeprowadzenie testów wszystkich metod wykonan
 
 ## Wyniki działania
 <center>
+
 ![alt text](https://github.com/Marwin34/Fortran_homework/blob/master/res/wykres4.png "Wykres dla kind = 4")
 _Wykres porównujący czas wykonania mnożenia macierzy dla kind = 4_
 
