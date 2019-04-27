@@ -234,7 +234,7 @@ program main
 
     close(19)
     
-    open(19, file='res/matmul4.dat', status='new')
+    open(19, file='res/matmull4.dat', status='new')
     write(*, *) "Testing  matmul (kind 4)."
     n = 10
     do while(n <= 1280)
@@ -256,7 +256,7 @@ program main
 
     close(19)
 
-    open(19, file='res/matmul8.dat', status='new')
+    open(19, file='res/matmull8.dat', status='new')
     write(*, *) "Testing  matmul (kind 8)."
     n = 10
     do while(n <= 1280)
@@ -278,7 +278,7 @@ program main
 
     close(19)
     
-    open(19, file='res/matmul16.dat', status='new')
+    open(19, file='res/matmull16.dat', status='new')
     write(*, *) "Testing  matmul (kind 16)."
     n = 10
     do while(n <= 1280)
