@@ -22,10 +22,13 @@ Uruchomienie programu spowoduje przeprowadzenie testów wszystkich metod wykonan
 ## Wyniki działania
 
 ![alt text](https://github.com/Marwin34/Fortran_homework/blob/master/res/wykres4.png "Wykres dla kind = 4")
+_Wykres porównujący czas wykonania mnożenia macierzy dla kind = 4_
 
 ![alt text](https://github.com/Marwin34/Fortran_homework/blob/master/res/wykres8.png "Wykres dla kind = 8")
+_Wykres porównujący czas wykonania mnożenia macierzy dla kind = 8_
 
 ![alt text](https://github.com/Marwin34/Fortran_homework/blob/master/res/wykres16.png "Wykres dla kind = 16")
+_Wykres porównujący czas wykonania mnożenia macierzy dla kind = 16_
 
 
 Przykładowe wykresy stworzone narzędziem gnuplot stosując odpowiednie pliki sterujące.
