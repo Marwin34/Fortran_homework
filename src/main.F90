@@ -36,6 +36,7 @@ program main
 
     call srand(seed)
     
+    open(19, file='res/naivmull4.dat', status='new')
     write(*, *) "Testing  naivmull (kind 4)."
     n = 10
     do while(n <= 1280)
@@ -48,13 +49,16 @@ program main
         call cpu_time(endTime) 
 
         print '(""i" ",f15.8,"")',n , (endTime - startTime) 
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A4)) deallocate(A4)
         if(allocated(B4)) deallocate(B4)
         if(allocated(C4)) deallocate(C4)
         n = n*2
     end do
+
+    close(19)
     
+    open(19, file='res/naivmull8.dat', status='new')
     write(*, *) "Testing  naivmull (kind 8)."
     n = 10
     do while(n <= 1280)
@@ -67,13 +71,16 @@ program main
         call cpu_time(endTime)
             
         print '(""i" ",f15.8,"")',n , (endTime - startTime)
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A8)) deallocate(A8)
         if(allocated(B8)) deallocate(B8)
         if(allocated(C8)) deallocate(C8)
         n = n*2
     end do
+
+    close(19)
     
+    open(19, file='res/naivmull16.dat', status='new')
     write(*, *) "Testing  naivmull (kind 16)."
     n = 10
     do while(n <= 1280)
@@ -86,13 +93,16 @@ program main
         call cpu_time(endTime)
         
         print '(""i" ",f15.8,"")',n , (endTime - startTime)
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A16)) deallocate(A16)
         if(allocated(B16)) deallocate(B16)
         if(allocated(C16)) deallocate(C16)
         n = n*2
     end do
+
+    close(19)
     
+    open(19, file='res/bettmull4.dat', status='new')
     write(*, *) "Testing  bettmull (kind 4)."
     n = 10
     do while(n <= 1280)
@@ -105,13 +115,16 @@ program main
         call cpu_time(endTime)
         
         print '(""i" ",f15.8,"")',n , (endTime - startTime)
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A4)) deallocate(A4)
         if(allocated(B4)) deallocate(B4)
         if(allocated(C4)) deallocate(C4)
         n = n*2
     end do
+
+    close(19)
     
+    open(19, file='res/bettmull8.dat', status='new')
     write(*, *) "Testing  bettmull (kind 8)."
     n = 10
     do while(n <= 1280)
@@ -124,13 +137,16 @@ program main
         call cpu_time(endTime)
         
         print '(""i" ",f15.8,"")',n , (endTime - startTime)
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A8)) deallocate(A8)
         if(allocated(B8)) deallocate(B8)
         if(allocated(C8)) deallocate(C8)
         n = n*2
     end do
+
+    close(19)
     
+    open(19, file='res/bettmull16.dat', status='new')
     write(*, *) "Testing  bettmull (kind 16)."
     n = 10
     do while(n <= 1280)
@@ -143,13 +159,16 @@ program main
         call cpu_time(endTime)
         
         print '(""i" ",f15.8,"")',n , (endTime - startTime)
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A16)) deallocate(A16)
         if(allocated(B16)) deallocate(B16)
         if(allocated(C16)) deallocate(C16)
         n = n*2
     end do
+
+    close(19)
     
+    open(19, file='res/dotmull4.dat', status='new')
     write(*, *) "Testing  dotmull (kind 4)."
     n = 10
     do while(n <= 1280)
@@ -162,13 +181,16 @@ program main
         call cpu_time(endTime)
         
         print '(""i" ",f15.8,"")',n , (endTime - startTime)
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A4)) deallocate(A4)
         if(allocated(B4)) deallocate(B4)
         if(allocated(C4)) deallocate(C4)
         n = n*2
     end do
+
+    close(19)
     
+    open(19, file='res/dotmull8.dat', status='new')
     write(*, *) "Testing  dotmull (kind 8)."
     n = 10
     do while(n <= 1280)
@@ -181,13 +203,16 @@ program main
         call cpu_time(endTime)
 
         print '(""i" ",f15.8,"")',n , (endTime - startTime)
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A8)) deallocate(A8)
         if(allocated(B8)) deallocate(B8)
         if(allocated(C8)) deallocate(C8)
         n = n*2
     end do
+
+    close(19)
     
+    open(19, file='res/dotmull16.dat', status='new')
     write(*, *) "Testing  dotmull (kind 16)."
     n = 10
     do while(n <= 1280)
@@ -200,14 +225,17 @@ program main
         call cpu_time(endTime)
         
         print '(""i" ",f15.8,"")',n , (endTime - startTime)
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A16)) deallocate(A16)
         if(allocated(B16)) deallocate(B16)
         if(allocated(C16)) deallocate(C16)
         n = n*2
     end do    
+
+    close(19)
     
-        write(*, *) "Testing  matmul (kind 4)."
+    open(19, file='res/matmul4.dat', status='new')
+    write(*, *) "Testing  matmul (kind 4)."
     n = 10
     do while(n <= 1280)
         allocate(A4(n, n))
@@ -219,13 +247,16 @@ program main
         call cpu_time(endTime)
         
         print '(""i" ",f15.8,"")',n , (endTime - startTime)
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A4)) deallocate(A4)
         if(allocated(B4)) deallocate(B4)
         if(allocated(C4)) deallocate(C4)
         n = n*2
     end do
-    
+
+    close(19)
+
+    open(19, file='res/matmul8.dat', status='new')
     write(*, *) "Testing  matmul (kind 8)."
     n = 10
     do while(n <= 1280)
@@ -238,13 +269,16 @@ program main
         call cpu_time(endTime)
         
         print '(""i" ",f15.8,"")',n , (endTime - startTime)
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A8)) deallocate(A8)
         if(allocated(B8)) deallocate(B8)
         if(allocated(C8)) deallocate(C8)
         n = n*2
     end do
+
+    close(19)
     
+    open(19, file='res/matmul16.dat', status='new')
     write(*, *) "Testing  matmul (kind 16)."
     n = 10
     do while(n <= 1280)
@@ -257,10 +291,12 @@ program main
         call cpu_time(endTime)
         
         print '(""i" ",f15.8,"")',n , (endTime - startTime)
-        
+        write(19, '(""i" ",f15.8,"")') n , (endTime - startTime)
         if(allocated(A16)) deallocate(A16)
         if(allocated(B16)) deallocate(B16)
         if(allocated(C16)) deallocate(C16)
         n = n*2
     end do   
+
+    close(19)
 end program main
